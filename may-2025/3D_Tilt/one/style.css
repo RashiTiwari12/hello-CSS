@@ -1,0 +1,41 @@
+.tilt-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+  background: white;
+  perspective: 1000px;
+}
+
+.tilt-image {
+  width: 600px;
+  height: auto;
+  transition: transform 0.1s ease;
+  transform-style: preserve-3d;
+  border-radius: 1.2rem;
+}
+.tilt-image:hover {
+  box-shadow: 0 0 30px rgba(66, 64, 64, 0.6);
+}
+.nav-div {
+  position: relative;
+  top: 0;
+  height: 12vh;
+  display: flex;
+  justify-content: space-around;
+  gap: 300px;
+  align-items: center;
+}
+.nav-list {
+  list-style: none;
+  font-size: large;
+}
+.nav-list p {
+  font-size: 2.1rem;
+  color: #5e5757;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

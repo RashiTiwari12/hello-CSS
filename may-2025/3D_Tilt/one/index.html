@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="nav-div">
+      <li class="nav-list"><p>Aquashow</p></li>
+      <li class="nav-list">Login 👤</li>
+    </div>
+    <div class="tilt-container">
+      <img
+        src="https://cdn.pixabay.com/photo/2025/02/04/23/03/fish-9382908_1280.jpg"
+        alt="3D Tilt Image"
+        class="tilt-image"
+      />
+    </div>
+    <!-- <script src="index.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelector(".tilt-image"), {
+        max: 15,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.3,
+      });
+    </script>
+  </body>
+</html>
